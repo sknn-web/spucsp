@@ -75,49 +75,46 @@ header p {
   font-size: 1.1rem;
 }
 
-/* Galería multimedia */
-.galeria {
+.conceptos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .media-card {
-  background-color: #222;
-  border-radius: 14px;
+  background: rgba(20, 20, 20, 0.9);
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 102, 0, 0.2);
+  padding: 1rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .media-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 14px 36px rgba(0,0,0,0.8);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.7);
 }
 
-.media-card img,
-.media-card video {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-  display: block;
-}
-
-.media-content {
-  padding: 1.5rem;
-}
-
-.media-content h3 {
+.media-tag {
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: #bbb;
   margin-bottom: 0.5rem;
-  font-size: 1.5rem;
-  color: var(--accent);
 }
 
-.media-content p {
-  font-size: 1rem;
-  color: #ddd;
+.media-body h3 {
+  color: var(--accent);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
+
+.media-body p {
+  color: #eaeaea;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
 
 /* Footer */
 footer {
